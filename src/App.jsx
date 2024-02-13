@@ -25,7 +25,7 @@ function App() {
 
   function addTask(taskTitle) {
     setTasksAndSave([...tasks, {
-      id: crypto.randomUUID(),
+      id: Date.now(),
       title: taskTitle,
       isCompleted: false
     }]);
